@@ -248,6 +248,12 @@
       <DependentUpon>201611250206446_Organ.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="OperationServer\BrotherOperaction.cs" />
+    <Compile Include="OperationServer\OrganAdapter.cs" />
+    <Compile Include="OperationServer\OrganAllOpraction.cs" />
+    <Compile Include="OperationServer\OrganCurrent.cs" />
+    <Compile Include="OperationServer\OrganOperaction.cs" />
+    <Compile Include="OperationServer\OrganSonOraction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User\MyControllerBase.cs" />
     <Compile Include="User\Operation.cs" />
