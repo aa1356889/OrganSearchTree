@@ -20,7 +20,7 @@ namespace OrganTree.OperationServer
             var dep = departmentBusiness.GetByRecordId(_userDeparmentId);
             var data = organBusiness.GetByRecordId(_userOrganId);
             List<Organ> list = null;
-            List<object> datas = null;
+            List<object> datas =new List<object>();
             if (string.IsNullOrEmpty(parentid))
             {
                 if (string.IsNullOrEmpty(_userDeparmentId) && !string.IsNullOrEmpty(_userOrganId))

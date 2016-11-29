@@ -84,6 +84,7 @@ namespace OrganTree.OperationServer
         protected virtual IEnumerable<object> FormatData(List<Organ> list,string parentid)
         {
             var datas = new List<object>();
+             if(list!=null&&list.Count>0)
             datas.AddRange(list.Select(c => new { c.RecordID, Name = c.OrganName, c.ParentId, Icon = "splashy-zoom_out6", Type = "organ" }));
             //再尝试加载这个机构下部门信息
             var deparemts = departmentBusiness.GetDetpList(parentid, string.Empty);
